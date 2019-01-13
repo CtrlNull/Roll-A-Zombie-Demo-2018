@@ -480,6 +480,7 @@ GameObject:
   - component: {fileID: 1352176175}
   - component: {fileID: 1352176174}
   - component: {fileID: 1352176173}
+  - component: {fileID: 1352176176}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -551,6 +552,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 8.899, y: -362.626, z: -0.39400002}
+--- !u!114 &1352176176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352176172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb1efb95baf0e9879f7d064c11125c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedZombiePosition: 0
+  selectedZombie: {fileID: 1787264857}
+  zombies:
+  - {fileID: 1787264857}
+  - {fileID: 25918807}
+  - {fileID: 1384327356}
+  - {fileID: 1842863857}
+  selectedSize: {x: 1.45, y: 1.45, z: 1.45}
+  defaultSize: {x: 0, y: 0, z: 0}
 --- !u!1 &1384327356 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000012396500830, guid: cb4a0e40b07644ed0a914752c0f03670,
@@ -640,6 +662,18 @@ PrefabInstance:
     - target: {fileID: 4000010406173450, guid: d29d2fcf46c754d6a92fc7c19b2d7b3e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010406173450, guid: d29d2fcf46c754d6a92fc7c19b2d7b3e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010406173450, guid: d29d2fcf46c754d6a92fc7c19b2d7b3e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010406173450, guid: d29d2fcf46c754d6a92fc7c19b2d7b3e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d29d2fcf46c754d6a92fc7c19b2d7b3e, type: 3}

@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int selectedZombiePosition;
+    public GameObject selectedZombie;
+    public List<GameObject> zombies;
+    public Vector3 selectedSize;
+    public Vector3 defaultSize;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+     void Start() {
+         SelectZombie(zombies[0], 0);
+     }
+
+     void SelectZombie(GameObject newZombie, int newPosition) {
+         selectedZombie = newZombie;
+         selectedZombie.transform.localScale = selectedSize;         
+     }
 }
